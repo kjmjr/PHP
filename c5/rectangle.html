@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- Martha Sheard Farley
+		September 22, 2017
+		rectangle.html
+		classwork learn about calling first php prorgam
+-->
+<html>
+<head>
+	<title> Rectangle Area Calculator</title>
+	<link rel="stylesheet" type="text/css" href="sample.css">
+</head>
+
+<body>
+	<h1> Rectangle Area Calculator for Mrs. Farley</h1>
+	
+	<!-- Refer to the php process that will process the data.-->
+	<form action="rectangle.php" method="post">
+		
+		<!-- Ask user for dimensions of rectangle -->
+		<p> What is the length of the rectangle? 
+		<input  type="text" size="20" name="lengthOfRectangle">
+		</p>
+		<p>And the width? 
+		<input type="text" size="20" name="widthOfRectangle">
+		</p>
+		
+		<!-- Allow user to submit the data or clear the values in the form -->
+		<p>
+			<input type="submit" value="Find Area">
+			<input type="reset" value="Clear all values">
+		</p>
+	</form>
+	
+</body>
+</html>	

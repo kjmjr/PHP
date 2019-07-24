@@ -1,0 +1,48 @@
+<!Doctype html>
+<!--        Kevin McAdoo
+            september 20. 2017
+			Compare-food.html
+			Drop Down Lists
+-->
+
+<html>
+<head>
+     <title> Favorite Foods</title>
+	 <link rel="stylesheet" type="text/css" href="sample.css">
+</head>
+
+<body>	 
+	<h1> Favorite Foods </h1>
+     
+	<form action="compare-food.php" method="post" >
+	   <p> What is your first name 
+	   <input type="text" size="20" name="firstName"> </p>
+	   <p> What is your last name 
+	   <input type="text" size="20" name="lastName"> </p>
+      
+	  
+	  <p> How do you like Hamburgers? (5 is highest rating, 0 is lowest rating)
+	  <select name="hamburgerRating">
+		  <option>5</option>
+		  <option>4</option>
+		  <option>3</option>
+		  <option>2</option>
+		  <option>1</option>
+		  <option>0</option>
+	  </select>
+	  </p>
+	  
+	  <p> How do you like pizza? (5 is highest rating, 0 is lowest rating)
+	  <select name="pizzaRating">
+		  <option>5</option>
+		  <option>4</option>
+		  <option>3</option>
+		  <option>2</option>
+		  <option>1</option>
+		  <option>0</option>
+	  </select>
+	  </p>
+	  
+	</form>
+</body>	 
+</html>

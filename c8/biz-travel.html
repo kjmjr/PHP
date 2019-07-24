@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--	Author: Kevin McAdoo
+		Date: OCTOBER 23. 2017
+		File:	bizTravel.html
+		Purpose: Chapter 8 class homework
+		biz-travel.html for nested and/or selection structure IF ELSE
+-->
+
+<html>
+<head>
+	<title>Business Travel</title>
+	<link rel="stylesheet" type="text/css" href="sample.css">
+</head>
+ 
+<body>
+	<h1> Welcome to the Business Travel Expense Report  </h1>
+	
+	<form action="biz-travel.php" method="post">
+		<p> Please enter your full name: </p>
+		<input type="text" size = "50" name="name">
+		
+		<p> Please enter the miles you traveled: </p>
+		<input type="text" size = "10" name="miles">
+		
+		<p> Is breakfast included as an expense? 
+			<select name = "bFast">
+				<option>No</option>
+				<option>Yes</option>
+			</select>
+			</p>
+
+		<p> Is lunch included as an expense? 
+			<select name = "lunch">
+				<option>No</option>
+				<option>Yes</option>
+			</select>
+			</p>
+
+		<p> Is dinner included as an expense? 
+			<select name = "dinner">
+				<option>No</option>
+				<option>Yes</option>
+			</select>
+			</p>
+		<p> Is a hotel included as an expense? 
+			<select name = "hotel">
+				<option>No</option>
+				<option>Yes</option>
+			</select>
+			</p>
+		<input type ="submit" value="submit"><input type="Reset" value="Clear your response">	
+	</form>
+</body>
+</html>

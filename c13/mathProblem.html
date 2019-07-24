@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--		
+		Date:	November 27, 2017
+		File:	mathProblem.html
+		Purpose:prompts user to php results 
+		Input: Text box
+		Output: Submits the file name to math-problem.php
+-->
+
+<html>
+<head>
+	<title> MATH Form </title>
+	<link rel ="stylesheet" type="text/css" href="sample.css">
+</head>
+<body>
+
+	<h1> Math Calculations </h1>
+    <p> Type in 2 number values for each text box</p>
+	<hr>
+	<form action ="math-problem.php" method = "post" >
+	
+	<!-- Here we are making a table to tell the user to type in 2 number values for each text box -->
+<table>	
+    <tr><td> Find a sum result (example: X + X) </td>
+	     <td><input type ="text" size = "5" name = "sum1"> 
+	         <input type ="text" size = "5" name ="sum2"></td></tr>
+	
+	<tr><td> Find a difference result (example: X-X) </td>
+	     <td><input type ="text" size = "5" name ="diff3">	
+	         <input type ="text" size = "5" name ="diff4"></td></tr>
+	
+	<tr><td> Find a product result (example: X * X)</td>
+	     <td><input type ="text"  size = "5"name ="pro5">
+	         <input type ="text" size = "5" name ="pro6"></td></tr>
+	
+	<tr><td> Find a quotient result (example: X\X) </td>
+	     <td><input type ="text" size = "5" name ="quo7">	
+	         <input type ="text" size = "5"name ="quo8"></td></tr>
+	
+</table>	
+
+<!-- Here we are submiting our information or click to start over-->	
+<input type ="submit" value ="Display the results">
+<input type ="reset" value ="Start over"><br>
+	</form>
+</body>
+</html>

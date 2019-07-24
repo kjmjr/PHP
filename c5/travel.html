@@ -1,0 +1,43 @@
+<DOCTYPE html>
+<!--	Author:
+		Date:
+		File:	travel.html
+		Purpose: Chapter 5 Assignment
+		Given html file for homework
+-->
+
+<html>
+<head>
+	<title>Travel to Rome</title>
+	<link rel="stylesheet" type="text/css" href="sample.css">
+	
+</head>
+ 
+<body>
+	<!-- Introduce the user to the purpose of this program -->
+	<h1 font-family="helvetica" font-size="24">Travel to Rome Reservation Form</h1>	
+	
+	<p>
+	<!-- 	create a form using php and call 
+			student supplied program called travel.php -->
+	<form action = "travel.php" method = "post" >
+		<!-- 	format the web page using an invisisble table to 
+				request input from the user -->
+		<table>
+		<!-- first row infomation ask for input -->
+		<tr><td>How many people are traveling?</td>
+			<td><input type = "text" size = "5" name = "numTravelers" /></td>
+		</tr>
+		<!-- second row information ask for more input-->
+		<tr><td>How many nights will you be staying?</td>
+			<td><input type = "text" size = "5" name = "numNights" /></td>
+		</tr>
+		</table>
+		
+		<!-- allow user to click this button to run travel.php -->
+		<p>
+		<input type = "submit" value = "Submit Your Reservation" />
+		</p>
+	</form>
+</body>
+</html>

@@ -1,0 +1,47 @@
+software-order.html algorithm:variables-number of copies ordered, sub total, tax, shipping/Handleing
+	Prompt for operatingSystem
+	Get operatingSystem
+	prompt for numberOfCopiesOrdered
+	Get numberOfCopiesOrdered
+	Prompt for subTotal
+	Get subTotal
+	Prompt for shipping/Handleing
+	Get shipping/Handleing
+	prompt for tax
+    Get tax	
+	Submit operatingSystem, numberOfCopiesOrdered, subTotal, shipping/Handleing, tax to
+	software-order.php
+End
+
+software-order.php algorithm:
+   Recieve operatingSystem, numberOfCopiesOrdered, subTotal, shipping/Handling, tax
+    software-order.html
+   numberOfCopiesOrdered * 35.00 = subTotal
+   subTotal * 0.07 = tax
+   numberOfCopies * 1.25 = shipping/Handleing
+   subTotal + tax + shipping/Handleing = totalCost
+   Display operatingSystem, numberOfCopiesOrdered, subTotal, tax, shipping/Handleing,totalCost 
+End   
+
+game-intro.html algorithm: variables-character name, character type, number of experience tokens to be purchased, number of health tokens to be purchased, number of supply tokens to be purchased
+   Prompt for characterName
+   Get characterName
+   Prompt for characterType
+   Get characterType
+   Prompt for numberOfExperienceTokensToBePurchased
+   Get numberOfExperienceTokensToBePurchased
+   Prompt for numberOfHealthTokensToBePurchased
+   Get numberOfHealthTokensToBePurchased
+   Prompt for numberOfSupplyTokensToBePurchased
+   Get numberOfSupplyTokensToBePurchased
+   Submit firstName, lastName, characterName, characterType, numberOfExperienceTokensToBePurchased, numberOfHealthTokensToBePurhcased, numberOfSupplyTokensToBePurchased to
+   game-intro.php
+End
+ 
+game-intro.php algorithm:
+   Recieve characterName, characterType, numberOfExperienceTokensToBePurchased, numberOfHealthTokensToBePurchased, numberOfSupplyTokensToBePurchased
+   game-intro.html
+   totalCost = numberOfExperienceTokensToBePurchased / 2 + numberOfHealthTokensToBePurchased / 10 + numberOfSupplyTokensToBePurchased / 25
+   Display characterName, characterType, numberOfExperiecnedTokensToBePurchased, numberOfHealthTokensToBePurchased, numberOfSupplyTokensToBePurchased,
+   totalCost
+End

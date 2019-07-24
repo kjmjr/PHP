@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--      Kevin McAdoo
+          September 21. 2017
+		  Software-order.html
+		  Drop Down Lists
+-->
+
+<html>
+<head>
+    <title> gameIntro </title>
+	<link rel="stylesheet" type="text/css" href="sample.css">
+</head>
+<body>
+<!-- this shows each value for each token -->
+   
+	 <h1> Character Creation </h1>
+	 <body style= "background-color:limegreen;">
+	 <br><p> YOU HAVE 10 GOLD PIECES </p></br>
+     <p> 1 gold piece buys 10 health tokens </p>
+     <p> 1 gold piece buys 2 experience tokens </p>
+     <p> 1 gold piece buys 25 supply tokens </p>	 
+    
+	 <form action= "game-intro.php" method= "post">
+	 <p> Enter your character's name:
+	  <input type="text" name="charName"> </p>
+
+	<!-- this shows each of the charater types -->
+	 
+	 <p> Select your character's type:
+	  <select name="charType">
+		  <option>Dwarf</option>
+		  <option>Elf</option>
+		  <option>Human</option>
+		  <option>Wizard</optiom>
+	 </select>
+	</p>
+
+	  <!-- this shows each option for health tokens -->
+	 
+	<p> Purchase health tokens
+	  <select name="healthTokens">
+		  <option>0</option>
+		  <option>10</option>
+		  <option>20</option>
+		  <option>30</option>
+	 </select>
+	</p>
+
+<!-- this shows each option for experienced tokens -->
+	  
+	<p> Purchase experience tokens
+	  <select name="expTokens">
+		  <option>0</option>
+		  <option>2</option>
+		  <option>4</option>
+		  <option>6</option>
+		  <option>8</option>
+		  <option>10</option>
+	 </select>
+	</p>
+
+<!-- this shows each option for supply tokens -->
+	  
+	<p> Purchase supply tokens 
+	  <select name="supplyTokens">
+		  <option>0</option>
+		  <option>25</option>
+		  <option>50</option>
+		  <option>75</option>
+		  <option>100</option>
+	  </select>
+	</p>
+	  
+<form action="game-intro.php">
+  <input type="submit" formaction="/action_page2.php" value="CLEAR THE FORM">
+	
+<form action="game-intro.php">
+  <input type="submit" formaction="/action_page2.php" value="SUBMIT YOUR CHARACTER">
+
+</form>
+	
+</body>
+</html>

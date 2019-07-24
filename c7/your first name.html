@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--      Kevin McAdoo
+          October 16, 2017
+		  <your first name> .html
+		  selection structures if else
+-->
+
+<html>
+<head>
+    <title> Your First Name </title>
+	<link rel="stylesheet" type="text/css" href="sample.css">
+</head>
+
+<body>
+      <h1> Choose your Destination </h1>
+	  
+	  <!-- your telling it to suggest typeing 
+	       in Rome or Tokyo in lowercase -->
+	  <p> The browser recommends that you type in lowercase for tokyo and rome </p>
+	  
+	  <!-- In the form action tab you are telling it to direct information to the php --> 
+	  
+	  <form action = "your first name.php " method="post">   
+	  <!-- In order to create a valid response type in Rome or 
+	       Tokyo and does not matter for number of nights -->
+	     <p> What is your destination? 
+		     <input type = "text" size= "10" name="destinationName">
+		 </p>
+	     <p> How many nights are you staying? 
+		     <input type = "text" size= "10" name="numNights">
+		 </p>
+	  <!-- Your writing this set of information to php by clicking submit 
+	       or if you don't like your response hit 
+		   the clear your answer button -->
+	     <p>
+	         <input type = "submit" value="Submit your answer">
+	         <input type = "reset" value="Clear your answer ">     	    
+	  </form></p>
+	  
+</body>
+</html>
